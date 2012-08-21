@@ -1,0 +1,99 @@
+<div id="header" role="banner">
+
+	<header>
+		<!--  branding logo -->
+		<h1 class="primary-logo">
+			<a href="http://sports.engelhorn.de">
+				<img src="${URLUtils.staticURL('/images/sport_logo.png')}" alt="${Resource.msg('global.storename','locale',null)}">
+				<span>${Resource.msg('global.storename','locale',null)}</span>
+			</a>
+		</h1>
+        
+		<div class="modeshop-logo">
+			<a href="http://fashion.engelhorn.de" alt="Mode Shop"><img src="${URLUtils.staticURL('/images/zum_mode_shop.png')}"></img></a>
+		</div>
+		
+		<div class="top-logo_fashion">
+			<a href="http://fashion.engelhorn.de/" alt="Mode Shop"><img src="${URLUtils.staticURL('/images/logo_mode_weiss.png')}"></img></a>
+		</div>	
+		<a href="#main" class="visually-hidden">Skip to content</a>
+	 
+		<!--  utility user menu -->
+		
+		<iscomment>INCLUDE: Customer login information, login, etc. (contains personal information, do not cache)</iscomment>
+		
+	
+		<!-- utility menu -->
+		
+		<div class="menu-utility">
+				<a href="https://sports.engelhorn.de/index.php?view=mein_konto&shop=15" title="MEIN KONTO">Mein Konto &nbsp<img src="${URLUtils.staticURL('/images/pfeil_rechts_schwarz.png')}"></img></a>
+				<a href="" title="Newsletter">Newsletter &nbsp<img src="${URLUtils.staticURL('/images/pfeil_rechts_schwarz.png')}"></img></a>
+				<a href="http://sports.engelhorn.de/gutschein" title="gutschein">gutschein &nbsp<img src="${URLUtils.staticURL('/images/pfeil_rechts_schwarz.png')}"></img></a>			
+		</div> 
+	  
+	    <iscomment>SLOT CONFIGURATION:  SLOT/ID: header-banner</iscomment>
+	    <div class="header-banner">
+	    	<isslot id="header-banner" description="Header banner within the header, between the logo and search bar, width XXXpx by height XXpx." context="global" />
+	    </div>
+		
+	</header>	
+</div><!-- /header -->
+
+  <iscomment>INCLUDE: Mini-cart, do not cache</iscomment>	    
+	<div id="mini-cart">
+	    <isinclude url="${URLUtils.url('Cart-MiniCart')}"/><img src="${URLUtils.staticURL('/images/warenkorb_tasche.png')}"></img>
+	</div>
+	
+ <div class="main_navigation">
+ 	<div class="main_navigation_button">
+			<a href="http://sports.engelhorn.de" alt="Mode Shop"><img src="${URLUtils.staticURL('/images/engelhorn_startseite_button.png')}"></img></a>
+			<a href="http://sports.engelhorn.de/damen/" alt="Mode Shop">Damen</a>
+			<a href="http://sports.engelhorn.de/herren/" alt="Mode Shop">Herren</a>
+			<a href="http://sports.engelhorn.de/kinder/" alt="Mode Shop">Kinder</a>
+	</div>
+	
+	<div class="header-search">
+		<isinclude template="search/simplesearch"/>
+	</div>
+	</div> 
+
+	
+ 		<div class="under_navigation">
+			<a href="#" alt="Mode Shop">Sportarten</a>
+			<a href="#" alt="Mode Shop">Bekleidung</a>
+			<a href="#" alt="Mode Shop">Schuhe</a>
+			<a href="#" alt="Mode Shop">Ausrüstung</a>
+			<a href="#" alt="Mode Shop">Marken</a>
+			<a href="#" alt="Neu">Neu</a>
+			<a href="#" alt="sale">Sale</a>
+	      
+		
+	   
+		     <a href="http://sports.engelhorn.de/aktuelle-werbung" alt="Aktuelle werbung" class="werbung-blog">Aktuelle Werbung</a>
+		     <a href="http://www.sportupyourlife.com" alt="Blog">Blog</a>
+		
+		
+      </div>
+
+	<div class="under_header">
+		<a href="http://sports.engelhorn.de" alt="Mode Shop">Sport-Shop &nbsp<img src="${URLUtils.staticURL('/images/pfeil_rechts_schwarz.png')}"></img></a>	
+	</div>
+
+<!-- /navigation -->
+
+
+<div id="navigation" role="navigation">
+
+	<nav>
+
+		<h1 class="visually-hidden navigation-header">Catalog Navigation</h1>
+		
+		<!--  category navigation -->
+		<iscomment>INCLUDE: category menu</iscomment>
+		<isinclude url="${URLUtils.url('Home-IncludeHeaderMenu')}"/>
+
+	</nav>
+</div>
+
+
+
